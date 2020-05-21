@@ -1,16 +1,18 @@
 import React from "react"
 import "./dropdownbutton.styles.css"
 
-const DropdownButton = () =>(
+const DropdownButton = ({name,menu_items,selected}) =>(
     <div>
         <div className="dropdown">
-            <span className="btnfont">Login</span>
+        <span className={`${selected?`btnselected`:``} btnfont`}>{name}</span>
             <div class="dropdown-content-holder">
                 <div className="dropdown-content">
-                    <div className="spans">My profile</div>
-                    <div className="spans">My Wislist</div>
-                    <div className="spans">Orders</div>
-                    <div className="spans">Rewards</div>
+                    {
+                        menu_items.map(linksname=>
+                        <div className="spans">{linksname.name}</div>
+                        )
+                    }
+                    
                 </div>
             </div>
         </div>

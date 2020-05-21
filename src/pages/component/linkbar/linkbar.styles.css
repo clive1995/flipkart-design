@@ -1,0 +1,13 @@
+.normal-links{
+    display: flex;
+    margin-top: 23px;
+    font-size: 17px;
+    width: 1123px;
+    justify-content: space-around;
+}
+
+.link-holder{
+    box-shadow: 0px 2px #888888;
+    display: flex;
+    justify-content: center;
+}
