@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import HeaderComponent from "./pages/component/header/headerComponent.component"
+import HeaderComponent from "./pages/component/header/headerComponent.component";
+import Homepage from "./pages/homepage/homepage.component"
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <HeaderComponent>
 
       </HeaderComponent>
+      <Homepage></Homepage>
     </div>
   );
 }

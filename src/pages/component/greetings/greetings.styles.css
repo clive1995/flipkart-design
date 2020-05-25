@@ -1,0 +1,7 @@
+.greetings-banner{
+    background-image: url("../../../images/greetings.jpg");
+    margin-top: 13px;
+    width: 84%;
+    height: 264px;
+    background-size: cover;
+}

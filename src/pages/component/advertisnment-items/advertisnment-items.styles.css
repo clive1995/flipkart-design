@@ -1,0 +1,17 @@
+.adv-product-body{
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    background-color: white;
+}
+
+.product-Header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    border-block-end: solid black 1px;
+}
+.product-image{
+    
+}

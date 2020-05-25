@@ -1,8 +1,8 @@
 import React from "react"
 import "./dropdownbutton.styles.css"
 
-const DropdownButton = ({name,menu_items,selected}) =>(
-    <div>
+const DropdownButton = ({mouseenter,name,menu_items,selected}) =>(
+    <div onMouseEnter={mouseenter}>
         <div className="dropdown">
         <span className={`${selected?`btnselected`:``} btnfont`}>{name}</span>
             <div class="dropdown-content-holder">

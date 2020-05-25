@@ -63,28 +63,44 @@ class HeaderComponent extends React.Component{
                     ]
                 },
 
-            ]
+            ],
+            list:[
+                {name:"Electronics"},
+                {name:"TV & Applications"},
+                {name:"Men"},
+                {name:"Women"},
+                {name:"Baby & Kids"},
+                {name:"Home & Furniture"},
+                {name:"Sports,Books & More"},
+                {name:"Offer Zone"}
+            ],
+            showlink:false
         }
     }
+
+    openmenus=()=>{
+        this.setState({showlink:!this.state.showlink})
+    }
+
     render(){
         return(
             <div>
             <div className="header-style">
                 <div className="search-bx-container">
                     <img className="imgtag" src={process.env.PUBLIC_URL + "/flipkart-plus.png"}/>
-                    <input class="search-box" type="text"/>
+                    <input className="search-box" type="text"/>
                 </div>
                 <div className="menu-btns">
                     {
                         this.state.menubuttons.map((buttons)=>
-                        <DropdownButton {...buttons}></DropdownButton>
+                        <DropdownButton {...buttons} mouseenter={this.openmenus}></DropdownButton>
                         )
                     }
 
                     
                 </div>
             </div>
-            <Linkbar></Linkbar>
+            <Linkbar ></Linkbar>
             </div>
         )
     }
